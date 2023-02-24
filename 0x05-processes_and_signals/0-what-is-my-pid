@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#prints the ID of the script
+
+echo $BASHPID
