@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Scripts that displays "Best School" 10 times and "hi" once
 
-count=0
+count=1
 while [ $count -le 10 ]
 do
 	if [ $count -eq 9 ]
