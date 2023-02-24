@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Scripts that prints 12 hours clock
+
+hour=0
+while [ $hour -lt 12 ]
+do
+	echo "Hour: $hour"
+	min=1
+	while [ $min -lt 60 ]
+	do
+		echo $min
+		min=$((min+1))
+	done
+	hour=$((hour+1))
+done
+
+echo "Hour: 12"
+min=1
+while [ $min -lt 60 ]
+do
+	echo $min
+	min=$((min+1))
+done
