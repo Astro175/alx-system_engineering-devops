@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script that terminates 7-highlander without using kill
+
+pkill -f 7-highlander
