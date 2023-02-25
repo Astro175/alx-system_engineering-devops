@@ -3,7 +3,7 @@
 # two secs sleep, and waits for a sigterm signal
 # teminates with "I am invincible"
 
-trap 'echo "I am invincible!!!"; exit' SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
 
 while true; do
 	echo "To infinity and beyond indefinitely"
