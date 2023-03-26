@@ -1,4 +1,4 @@
-https://imgur.com/a/p4QddFe
+https://imgur.com/a/5w0HB1t
 In this design, there are two servers, each with Nginx, Application Server, and MySQL. The Load Balancer distributes the incoming traffic 
 between the two servers. The DNS points to the IP address of the Load Balancer.
 

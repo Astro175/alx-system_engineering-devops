@@ -1,4 +1,4 @@
-https://imgur.com/a/2iLUFce
+https://imgur.com/a/1Ij9k3L
 We are adding 3 firewalls to provide multiple layers of protection to the web infrastructure, and to control incoming and outgoing traffic.
 An SSL certificate is being added to serve www.foobar.com over HTTPS to encrypt the traffic between the web server and the client's browser,
 providing security and privacy.
