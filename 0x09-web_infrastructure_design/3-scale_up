@@ -1,0 +1,13 @@
+https://imgur.com/a/AWE7vgy
+Server: This is required to host one or more of the components of the web application.
+For example, it could host the web server, application server, or database server.
+
+Load-balancer (HAproxy): This is necessary to distribute incoming traffic across multiple servers hosting the web application components.
+This ensures that no single server gets overloaded with traffic and helps to maintain high availability.
+
+Split components: Separating the web server, application server, and database server onto their own individual servers allows
+for more efficient resource management, easier scaling, and better fault tolerance. It also helps to isolate potential security
+breaches and reduces the impact of a single component failure on the entire web application.
+
+Overall, adding these elements improves the performance, scalability, and availability of the web application while also providing
+better security and fault tolerance.
