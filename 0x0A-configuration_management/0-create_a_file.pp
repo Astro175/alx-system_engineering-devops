@@ -1,7 +1,7 @@
 # Script that creates a file with permissions
 
 file { '/tmp/school':
-  ensure = 'present',
+  ensure = 'file',
   mode = '0744',
   owner = 'www-data',
   group = 'www-data',
