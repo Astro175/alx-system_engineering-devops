@@ -3,7 +3,7 @@
 
 apt-get update
 apt-get -y install nginx
-ufw allow "Nginx HTTP"
+ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/index2.html
 Killall nginx
 /usr/sbin/nginx
