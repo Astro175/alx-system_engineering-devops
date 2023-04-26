@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Script that redirects to a new page
+
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo echo "Hello World!" | sudo tee /var/www/html/index.html
+sudo vi /etc/nginx/sites-available/redirect_me.conf
+server {
+    listen 80;
+    server_name $host;
+    return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4$request_uri;
+}
+sudo ln -s /etc/nginx/sites-available/redirect_me.conf /etc/nginx/sites-enabled/
+sudo service nginx restart
