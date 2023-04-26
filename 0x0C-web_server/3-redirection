@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script that configures a new Ubuntu machine to respect above requirements
+# Script that redirects the page of a site
 
 sudo apt-get update
 sudo apt-get install -y nginx
