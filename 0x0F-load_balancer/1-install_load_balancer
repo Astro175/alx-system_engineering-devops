@@ -15,5 +15,5 @@ backend http_back
     balance roundrobin
     server 181572-web-01 54.237.49.88:80 check
     server 181572-web-02 100.26.247.192:80 check
-" >> /etc/haproxy/haproxy.cfg
+" | sudo tee /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
