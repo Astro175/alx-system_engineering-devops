@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# define a function to output the DNS record information for a given subdomain
+
+function get_domain {
+
+	local subdomain=$1
+	local domain=$2
+	local record_type=$(dig $subdomain.$domain +short | awk 'NR==1{print $2}')
+	local ip=$(dig $subdomain.$domain +short | awk 'NR==1{print $1}')
+	echo "The subdomain $subdomain is a $record_type record and points to $ip"
+}
+
+if [ $# -eq 2 ]; then
+	get_domain $2 $1
+else
+	get_domain "www" $1
+	get_domain "lb-01" $1
+	get_domain "web-01" $1
+	get_domain "web-02" $1
+fi
