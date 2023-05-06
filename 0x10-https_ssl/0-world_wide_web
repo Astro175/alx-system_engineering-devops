@@ -5,8 +5,9 @@ function get_domain {
 
 	local subdomain=$1
 	local domain=$2
-	local record_type=$(dig $subdomain.$domain +short | awk 'NR==1{print $2}')
-	local ip=$(dig $subdomain.$domain +short | awk 'NR==1{print $1}')
+	 local record=$(dig $subdomain.$domain | awk 'NR==14{print $0}')
+	local record_type=$(echo "$record" | awk '{print $4}')
+	local ip=$(echo "$record" | awk '{print $5}')
 	echo "The subdomain $subdomain is a $record_type record and points to $ip"
 }
 
