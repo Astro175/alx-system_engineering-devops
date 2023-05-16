@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/bin/env bash
 # Script that sets the active
+
 
 if [ $# -eq 0 ]; then
   username="root"
