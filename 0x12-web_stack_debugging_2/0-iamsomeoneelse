@@ -8,11 +8,5 @@ else
   username=$1
 fi
 
-# Get the current user
-original_user=$(whoami)
-
 # Run the `whoami` command as the specified user
 sudo -u "$username" whoami
-
-# Switch back to the original user
-sudo -u "$original_user" whoami
