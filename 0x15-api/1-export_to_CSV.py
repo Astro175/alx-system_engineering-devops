@@ -35,6 +35,6 @@ if __name__ == "__main__":
     with open(filename, 'w') as csvfile:
         csvwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
 
-        for task in completed_tasks:
+        for task in todo_data:
             csvwriter.writerow([employee_ID, employee_name,
                                 str(task['completed']), task['title']])
