@@ -3,8 +3,8 @@
    Module that connects to an api and save the
    data into a csv file
 """
-import requests
 import csv
+import requests
 import sys
 
 if __name__ == "__main__":
