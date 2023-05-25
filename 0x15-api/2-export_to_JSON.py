@@ -36,4 +36,3 @@ if __name__ == "__main__":
         json_filename = "{}.json".format(employee_ID)
         with open(json_filename, "w") as file:
             json.dump(json_data, file)
-
