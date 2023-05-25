@@ -2,8 +2,9 @@
 """
    Module that access API of user's todo list
 """
-import sys
+
 import requests
+import sys
 
 
 if __name__ == "__main__":
@@ -29,7 +30,7 @@ if __name__ == "__main__":
                 completed.append(todo)
         number_of_complete = len(completed)
         total_number = len(todo_data)
-        print("{} is done with tasks ({}/{}):".format(
+        print("Employee {} is done with tasks ({}/{}):".format(
             employee_name, number_of_complete,
             total_number))
 
