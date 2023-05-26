@@ -32,7 +32,7 @@ for user in users_data:
                 'completed': task['completed']
             })
 
-    json_data[user_id] = user_tasks
+    json_data[user_id] = user_tasks  # Updated to assign tasks to each user
 
 json_filename = 'todo_all_employees.json'
 with open(json_filename, 'w') as json_file:
