@@ -5,6 +5,7 @@
 
 import requests
 
+
 def number_of_subscribers(subreddit):
     """
        Scrapes reddit api and gets the number of subscribers
@@ -13,7 +14,7 @@ def number_of_subscribers(subreddit):
     url = f'https://www.reddit.com/r/{subreddit}/about.json'
 
     data = requests.get(url, headers=header, allow_redirects=False)
-    
+
     if data.status_code == 200:
         try:
             data = data.json()
