@@ -5,7 +5,7 @@ import requests
 
 def top_ten(subreddit):
     """Takes in a subreddit and prints the top hot"""
-    url = f'https://www.reddit.com/r/programming/hot.json'
+    url = f'https://www.reddit.com/r/{subreddit}/hot.json'
     params = {'limit': 10}
     header = {'User-agent': 'Chrome'}
     try:
