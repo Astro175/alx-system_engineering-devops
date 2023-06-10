@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-   Module that scrapes reddit api
-"""
+"""Module that scrapes reddit api"""
 
 import requests
 
