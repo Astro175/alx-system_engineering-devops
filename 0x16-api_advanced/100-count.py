@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
    Searches through a list of words and check,
    if they have appearance in Reddit hotlist
