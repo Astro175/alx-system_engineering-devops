@@ -26,7 +26,7 @@ def count_words(subreddit, word_list, after=None, count_dict={}):
         if not posts:
             return None
         for post in posts:
-            itle = post["data"]["title"].lower()
+            title = post["data"]["title"].lower()
             for word in word_list:
                 if title.count(word.lower()) > 0:
                     count_dict[word] = count_dict.get(word, 0) + \
